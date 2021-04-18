@@ -55,6 +55,7 @@ body{
     color: whitesmoke;
 }
 .redbtn {
+    cursor: pointer;
     background: url(buttonbackground1.jpg);
     color: white;
     border-style: none;
