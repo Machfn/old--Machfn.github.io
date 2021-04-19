@@ -11,6 +11,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (orientation: portrait) {
+    body {
+        background: url("smallverticalbackground.jpg");
+    }
+}
 .image1 {
     width: 100%;
 }

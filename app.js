@@ -4,6 +4,7 @@ const app = Vue.createApp({
             sike: "Benon",
             pog: "PoggerHamster420",
             imgguy: "Ciaran O'Brien",
+            imgpeople: "Renan Kamikoga",
         }
     }
 })
