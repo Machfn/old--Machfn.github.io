@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>Homepage</Title>
+        <meta name="description" content="The tool for easy access to school and work applications">
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#ff99ff">
+        <link rel="stylesheet" href="mobileindex.css">
+        <script src="mobileindex.js"></script>
+        <link rel="icon" href="Poggers.png" sizes="64x64">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="mobilemanifest.webmanifest">
+        <link rel="apple-touch-icon" href="Biggerurlimg.png">
+    </head>
+    <body>
+        <div id="app">
+            <div id="loading-container"></div>
+            <div class="textpoggers">
+                <!--<img class="adtesting" src="ponokn.png">-->            
+                <h1 class="txtpog">Home Screen</h1>
+                <form onclick="openall()">
+                    <button onclick="openedall()" class="redbtn">Open All Programs</button>
+                </form>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="img1">
+                        <input type="image" class="image1" onclick="imgclick1(); openeddrive()" src="Drive2.png" alt="poggers">
+                        <script>
+                            function imgclick1() {
+                                window.open("https://drive.google.com", "_blank", "noreffer noopener")
+                            }
+                        </script>
+                    </div>
+                    <div class="linktothing1">
+                        <form class="form1" action="https://drive.google.com" target="_blank" rel="noreffer noopener">
+                            <button onclick="openeddrive()" class="btnlink1">Drive</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img2">
+                        <input type="image" class="image2" onclick="imgclick2(); openedclassroom()" src="Classroom2.png" alt="poggers">
+                        <script>
+                            function imgclick2() {
+                                window.open("https://classroom.google.com", "_blank", "noreffer noopener")
+                            }
+                        </script>
+                    </div>
+                    <div class="linktothing2">
+                        <form class="form2" action="https://classroom.google.com" target="_blank" rel="noreffer noopener">
+                            <button onclick="openedclassroom()" class="btnlink2">Classroom</button>
+                        </form> 
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img3">
+                        <input type="image" class="image3" onclick="imgclick3(); openedgmail()" src="Gmail2.png" alt="poggers">
+                        <script>
+                            function imgclick3() {
+                                window.open("https://mail.google.com", "_blank", "noreffer noopener")
+                            }
+                        </script>
+                    </div>
+                    <div class="linktothing3">
+                        <form class="form3" action="https://mail.google.com" target="_blank" rel="noreffer noopener">
+                            <button onclick="openedgmail()" class="btnlink3">Mail</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img4">
+                        <input type="image" class="image4" onclick="imgclick4(); openedproton()" src="Proto2.png" alt="poggers">
+                        <script>
+                            function imgclick4() {
+                                window.open("https://protonmail.com/", "_blank", "noreffer noopener")
+                            }
+                        </script>
+                    </div>
+                    <div class="linktothing4">
+                        <form class="form4" action="https://protonmail.com/" target="_blank" rel="noreffer noopener">
+                            <button onclick="openedproton()" class="btnlink4">Proton</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="img5">
+                        <input type="image" class="image5" onclick="imgclick5(); openedschoolzone()" src="Schoolzone2.png" alt="poggers">
+                        <script>
+                            function imgclick5() {
+                                window.open("https://schoolzone.epsb.ca/cf/index.cfm", "_blank", "noreffer noopener")
+                            }
+                        </script>
+                    </div>
+                    <div class="linktothing5">
+                        <form class="form5" action="https://schoolzone.epsb.ca/cf/index.cfm" target="_blank" rel="noreffer noopener">
+                            <button onclick="openedschoolzone()" class="btnlink5">SchoolZone</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="webcredit">
+                <button class="dropbtn">Credits</button>
+                <div class="dropdowncontent">
+                    <a class="credit" onclick="benoncred()"> {{ sike }} </a>
+                    <a class="credit2" onclick="hamcred()"> {{ pog }} </a>
+                    <a class="imgcred" onclick="imgcredit()"> {{imgguy}} </a>
+                    <a class="imgcred2" onclick="imgcredittwo()"> {{imgpeople}}</a>
+                </div>
+                <script>
+                    function imgcredittwo() {
+                        window.open("https://unsplash.com/photos/a-5R9mE3ryI", rel="noreffer noopener")
+                    }
+                    function imgcredit() {
+                        window.open("https://unsplash.com/photos/LoGWCnEVDgU", rel="noreffer noopener")
+                    }
+                    function benoncred() {
+                        window.open("https://github.com/Machfn", rel="noreffer noopener")
+                    }
+                    function hamcred() {
+                        window.open("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9_ksXqWQVL8%2Fhqdefault.jpg&f=1&nofb=1", rel="noreffer noopener")
+                    }
+                    if ('serviceWorker' in navigator) {
+                        window.addEventListener('load', function() {
+                            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                                //registration was succesful
+                                console.log("Registered");
+                            }, function(err) {
+                                //registration failed
+                                console.log("registration failed: ", err);
+                            }).catch(function(err) {
+                                console.log(err);
+                            });
+                        });
+                    } else {
+                        console.log('service worker is not supported');
+                    }
+                </script>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+        <script src="app2.js"></script>
+    </body>
+</html>

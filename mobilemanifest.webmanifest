@@ -1,0 +1,21 @@
+{
+    "short_name": "Homescreen",
+    "name": "Homepage",
+    "icons": [
+        {
+            "src": "Biggerurlimg.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "512pngimg.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/mobilev1",
+    "background_color": "#ff99ff",
+    "theme_color": "#ff99ff",
+    "display": "standalone"
+}

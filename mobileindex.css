@@ -1,0 +1,268 @@
+/*hello*/
+body{
+    background: url("koreabackground6.jpg");
+}
+.grid-container {
+    display: grid;
+    width: 30ch;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(auto-fill,minmax(160px,1fr));
+    grid-auto-rows: minmax(160px, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (orientation: portrait) {
+    body {
+        background: url("smallverticalbackground.jpg");
+    }
+}
+.image1 {
+    width: 100%;
+}
+.form1 {
+    text-align: center;
+}
+.image2 {
+    width: 100%;
+}
+.form2 {
+    text-align: center;
+}
+.form3 {
+    text-align: center;
+}
+.image4 {
+    width: 96%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.form4 {
+    text-align: center;
+}
+.image5 {
+    width: 100%;
+    margin-left: 5%;
+}
+.form5 {
+    text-align: center;
+}
+.textpoggers {
+    width: 100%;
+    height: 20%;
+    float: right;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.txtpog {
+    font-family: Helvetica;
+    font-size: 400%;
+    color: whitesmoke;
+}
+.redbtn {
+    cursor: pointer;
+    background: url(buttonbackground1.jpg);
+    color: white;
+    border-style: none;
+    border-radius: 16px;
+    font-size: 200%;
+    transform:
+    perspective(800px)
+    scale(0.8);
+    filter: blur(0.5px);
+    transition: 0.6s
+    ease all;
+}
+.redbtn:hover{
+    transform:
+    perspective(800px)
+    scale(1);
+    filter: blur(0px);
+}
+.btnlink1 {
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btnlink2 {
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btnlink3 {
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btnlink4 {
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btnlink5 {
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.adtesting {
+    width: 50%;
+}
+.image3 {
+    width: 100%;
+}
+.credit {
+    color: white;
+}
+.credit2 {
+    color: white;
+}
+.webcredit {
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+.imgcred {
+    color: white;
+    text-decoration: none;
+}
+.dropbtn {
+    color: white;
+    border-style: none;
+    background-color: transparent;
+    transform:
+    scale(0.9);
+    transition: 0.6s
+    ease all;
+}
+.dropdowncontent {
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 2vh;
+}
+.dropdowncontent a {
+    border-radius: 4px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+.webcredit:hover .dropdowncontent{
+    display: block;
+}
+.webcredit:hover .dropbtn {
+    transform:
+    scale(1);
+}
+.img1 {
+    transform:
+    perspective(800px)
+    rotateY(25deg)
+    scale(0.9)
+    rotateX(10deg);
+    filter: blur(2px);
+    opacity: 1;
+    transition: 0.6s
+    ease all;
+}
+.img1:hover {
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)
+    rotateX(10deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.img2 {
+    transform:
+    perspective(800px)
+    rotateY(25deg)
+    scale(0.9)
+    rotateX(10deg);
+    filter: blur(2px);
+    opacity: 1;
+    transition: 0.6s
+    ease all;
+}
+.img2:hover {
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)
+    rotateX(10deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.img3 {
+    transform:
+    perspective(800px)
+    rotateY(25deg)
+    scale(0.9)
+    rotateX(10deg);
+    filter: blur(2px);
+    opacity: 1;
+    transition: 0.6s
+    ease all;
+}
+.img3:hover {
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)
+    rotateX(10deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.img4 {
+    transform:
+    perspective(800px)
+    rotateY(25deg)
+    scale(0.9)
+    rotateX(10deg);
+    filter: blur(2px);
+    opacity: 1;
+    transition: 0.6s
+    ease all;
+}
+.img4:hover {
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)
+    rotateX(10deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.img5 {
+    transform:
+    perspective(800px)
+    rotateY(25deg)
+    scale(0.9)
+    rotateX(10deg);
+    filter: blur(2px);
+    opacity: 1;
+    transition: 0.6s
+    ease all;
+}
+.img5:hover {
+    transform:
+    perspective(800px)
+    rotateY(-15deg)
+    translateY(-50px)
+    rotateX(10deg)
+    scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
