@@ -14,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/mobilev1",
+    "start_url": "/?utm_source=mobilev1",
     "background_color": "#ff99ff",
     "theme_color": "#ff99ff",
     "display": "standalone"
