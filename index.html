@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <Title>Homepage</Title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="homepage.css">
         <script src="homepage.js"></script>
         <link rel="icon" href="Poggers.png" sizes="64x64">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="app">
+            <div id="loading-container"></div>
             <div class="textpoggers">
                 <!--<img class="adtesting" src="ponokn.png">-->            
                 <h1 class="txtpog">Home Screen</h1>
@@ -96,15 +98,11 @@
             <div class="webcredit">
                 <button class="dropbtn">Credits</button>
                 <div class="dropdowncontent">
-                    <a class="credit" onclick="benoncred()"> {{sike}} </a>
-                    <a class="credit2" onclick="hamcred()"> {{pog}} </a>
+                    <a class="credit" onclick="benoncred()"> {{ sike }} </a>
+                    <a class="credit2" onclick="hamcred()"> {{ pog }} </a>
                     <a class="imgcred" onclick="imgcredit()"> {{imgguy}} </a>
-                    <a class="imgcred2" onclick="imgcredittwo()"> {{imgpeople}} </a>
                 </div>
                 <script>
-                    function imgcredittwo() {
-                        window.open("https://unsplash.com/photos/a-5R9mE3ryI", rel="noreffer nooopener")
-                    }
                     function imgcredit() {
                         window.open("https://unsplash.com/photos/LoGWCnEVDgU", rel="noreffer noopener")
                     }
@@ -114,6 +112,34 @@
                     function hamcred() {
                         window.open("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9_ksXqWQVL8%2Fhqdefault.jpg&f=1&nofb=1", rel="noreffer noopener")
                     }
+                    if ('serviceWorker' in navigator) {
+                        window.addEventListener('load', function() {
+                            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                                //registration was succesful
+                                console.log("Registered");
+                            }, function(err) {
+                                //registration failed
+                                console.log("registration failed: ", err);
+                            }).catch(function(err) {
+                                console.log(err);
+                            });
+                        });
+                    } else {
+                        console.log('service worker is not supported');
+                    }
+                    window.addEventListener("beforeinstallprompt", e => {
+                        console.log("beforeinstallprompt Event fired");
+                        e.preventDefault();
+                        // Stash the event so it can be triggered later
+                        this.defferedPrompt = e;
+                        return false;
+                    });
+                    // When you want to trigger prompt:
+                    this.defferedPrompt.prompt();
+                        this.defferedPrompt.userChoice.then(choice => {
+                        console.log(choice);
+                        });
+                    this.defferedPrompt = null;
                 </script>
             </div>
         </div>

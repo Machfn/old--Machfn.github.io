@@ -1,0 +1,12 @@
+{
+    "short_name": "Homescreen",
+    "name": "Chat",
+    "icons": [
+        {
+            "src": "poggers.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen"
+}
