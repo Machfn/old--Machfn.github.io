@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="description" content="A home screen for all your apps for school and work!">
         <Title>Homepage</Title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="homepage.css">
         <script src="homepage.js"></script>
         <link rel="icon" href="Poggers.png" sizes="64x64">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="manifest.webmanifest">
     </head>
     <body>
         <div id="app">
@@ -102,12 +102,8 @@
                     <a class="credit" onclick="benoncred()"> {{ sike }} </a>
                     <a class="credit2" onclick="hamcred()"> {{ pog }} </a>
                     <a class="imgcred" onclick="imgcredit()"> {{imgguy}} </a>
-                    <a class="imgcred2" onclick="imgcredittwo()"> {{imgpeople}} </a>
                 </div>
                 <script>
-                    function imgcredittwo() {
-                        window.open("https://unsplash.com/photos/a-5R9mE3ryI", rel="noreffer nooopener")
-                    }
                     function imgcredit() {
                         window.open("https://unsplash.com/photos/LoGWCnEVDgU", rel="noreffer noopener")
                     }
@@ -132,19 +128,6 @@
                     } else {
                         console.log('service worker is not supported');
                     }
-                    window.addEventListener("beforeinstallprompt", e => {
-                        console.log("beforeinstallprompt Event fired");
-                        e.preventDefault();
-                        // Stash the event so it can be triggered later
-                        this.defferedPrompt = e;
-                        return false;
-                    });
-                    // When you want to trigger prompt:
-                    this.defferedPrompt.prompt();
-                        this.defferedPrompt.userChoice.then(choice => {
-                        console.log(choice);
-                        });
-                    this.defferedPrompt = null;
                 </script>
             </div>
         </div>

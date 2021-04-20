@@ -1,0 +1,13 @@
+                    window.addEventListener("beforeinstallprompt", e => {
+                        console.log("beforeinstallprompt Event fired");
+                        e.preventDefault();
+                        // Stash the event so it can be triggered later
+                        this.defferedPrompt = e;
+                        return false;
+                    });
+                    // When you want to trigger prompt:
+                    this.defferedPrompt.prompt();
+                        this.defferedPrompt.userChoice.then(choice => {
+                        console.log(choice);
+                        });
+                    this.defferedPrompt = null;
