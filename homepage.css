@@ -1,6 +1,7 @@
 /*hello*/
 body{
     background: url("koreabackground6.jpg");
+    size: 100%;
 }
 .grid-container {
     display: grid;
