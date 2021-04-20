@@ -1,7 +1,9 @@
 /*hello*/
+html {
+    overflow-x: hidden;
+}
 body{
     background: url("koreabackground6.jpg");
-    width: 99%;
 }
 .grid-container {
     display: grid;
